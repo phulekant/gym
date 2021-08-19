@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            /* box-sizing: border-box; */
+            border: 2px solid blue;
+            background-color:blue;
+            width: 900px;
+            margin: auto;
+            border-radius: 4px;
+        }
+
+        .normal {
+            border: 2px solid violet;
+            margin: 6px 4px;
+            padding: 10px 4px;
+            background-color: #a589d7;
+            border-radius: 4px;
+            height: 227px;
+
+
+        }
+
+        #fruitspara {
+            float: left;
+            width: 49%;
+
+        }
+
+        #vegetablepara {
+            float: right;
+            width: 49%;
+        }
+
+        #stationarypara {
+            /* float: left; */
+            clear: both;
+            height: 190px;
+
+        }
+
+        #Glassespara {
+            float: right;
+            width: 49%;
+
+        }
+
+        #Sportspara {
+            float: left;
+            width: 49%;
+        }
+
+        h1 {
+            margin:5px auto;
+            width: fit-content;
+            color: rgb(223 204 241);
+        }
+
+        h3 {
+            margin: auto;
+            width: 100px;
+            font-style: bold;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .btn {
+            border: none;
+            background-color: #26af8d;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin:0px 0px;
+            color: #540b33;
+        }
+        button:hover{
+            background-color: rgb(190, 190, 179);
+            color: rgb(21, 146, 40);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .navbar{
+            background-color: blue;
+            border-radius: 8px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            list-style: none;
+            float: left;
+            margin: 4px 10px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            font-size: 26px;
+            color: rgb(223 204 241);
+        }
+        .navbar li a:hover{
+            background-color: rgb(255, 255, 255);
+            color: blue;
+            /* font-family:  'Arial Narrow Bold', sans-serif; */
+        }
+        #search{
+            box-sizing: border-box;
+            float:right;
+            border: 2px solid rgb(79, 185, 69); 
+            margin: 8px 20px;
+            border-radius: 4px;
+            padding: 3px 6px;      
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="tut20.html">Home</a></li>
+                <li><a href="tut24.html">About</a></li>
+                <li><a href="tut7.html">Gallery</a></li>
+                <li><a href="tut7.html">Info</a></li>
+                <li><a href="tut8.html">Status</a></li>
+                <li><a href="tut8.html">Help</a></li>
+                <li><a href="tuto8.html">Contact</a></li>
+                <div class='search'>
+                    <input type="text" name="search" id="search" placeholder="Search Here something">
+                    <!-- Search Here -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <h1> Welcome to my Grocery Store</h1>
+        <div id="fruitspara" class="normal">
+            <h3>Fruits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error natus doloremque quaerat labore? Esse
+                voluptatum cumque itaque ipsa fuga accusamus commodi. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Velit inci Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.rrupti illum quod
+                molestiae totam reprehenderit iusto accusantium natus, officiis dolores id dolorum atque, quibusdam quis
+                ratione repellat <a href="tut18.html" class='btn1'>Read More</a> </p>
+            <button class="btn"> Contact us</button>
+        </div>
+        <div id="vegetablepara" class="normal">
+            <h3>Vegetable</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error natus doloremque quaerat labore? Esse
+                voluptatum cumque itaque ipsa fuga accusamus commodi. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Cum beatae, tempora cumque voluptates consectetur ipsa impedit consequatur quidem
+                nostrum, labore temporibus id. Obcaecati quam perspiciatis velit, rerum dolor aperiam deserunt! <a
+                    href="tut18.html" class='btn1'>Read More</a></p>
+            <button class="btn"> Contact us</button>
+        </div>
+
+        <div id="Glassespara" class="normal">
+            <h3>Glasses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error natus doloremque quaerat labore? Esse
+                voluptatum cumque itaque ipsa fuga accusamus commodi. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dignissimos consectetur corrupti natus enim adipisci ipsa esse possimus hic explicabo fugit beatae
+                inventore, pariatur doloremque vitae optio exercitationem, labore harum ad. <a href="tut18.html"
+                    class='btn1'>Read More</a></p>
+            <button class="btn"> Contact us</button>
+        </div>
+        <div id="Sportspara" class="normal">
+            <h3>Sports</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error natus doloremque quaerat labore? Esse
+                voluptatum cumque itaque ipsa fuga accusamus commodi. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dignissimos consectetur corrupti natus enim adipisci ipsa esse possimus hic explicabo fugit beatae
+                inventore, pariatur doloremque vitae optio exercitationem, labore harum ad.<a href="tut18.html"
+                    class='btn1'>Read More</a></p>
+            <button class="btn"> Contact us</button>
+        </div>
+        <div id="stationarypara" class="normal">
+            <h3>Stationary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error natus doloremque quaerat labore? Esse
+                voluptatum cumque itaque ipsa fuga accusamus commodi. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dignissimos consectetur corrupti natus enim adipisci ipsa esse possimus hic explicabo fugit beatae
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam placeat quisquam consequatur. Eius
+                maiores ipsa, soluta labore doloribus mollitia ratione minima ex?
+                inventore, pariatur doloremque vitae optio exercitationem, labore harum ad.<a href="tut18.html"
+                    class='btn1'>Read More</a></p>
+            <button class="btn"> Contact us</button>
+        </div>
+    </div>
+</body>
+</html>

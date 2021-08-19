@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit INDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('https://images.unsplash.com/photo-1527186504227-0a47da29a0d0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zml0bmVzcyUyMGdpcmx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+            /* background-image: url(https://images.unsplash.com/photo-1606589063754-b2787652d79d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fGZpdG5lc3MlMjBnaXJsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60); */
+            /* width: 2585px;
+    height: 1678px; */
+
+
+        }
+
+        header {
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .left {
+            /* border: 2px solid rgb(252, 252, 252); */
+            width: 100px;
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            border-radius: 5px;
+            border: 2px solid rgb(161, 211, 161);
+        }
+
+        .middle {
+            /* position: absolute; */
+            border: 2px solid rgb(49, 89, 201);
+            width: 40%;
+            display: block;
+            margin: 15px auto;
+            border-radius: 13px;
+            box-sizing: border-box;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+
+            width: 15%;
+            display: inline-block;
+            position: absolute;
+            right: 4px;
+            top: 15px;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 90px;
+            height: 80px;
+        }
+
+        h3 {
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            margin: 3px 10px;
+            padding: 3px 3px;
+            color: whitesmoke;
+            font-size: 16px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: none;
+            margin: 3px 10px;
+            padding: 3px 3px;
+            color: rgb(168, 30, 11);
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            /* border-color: white; */
+            margin: 0px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 2px solid rgb(161, 211, 161);
+
+        }
+
+        .btn:hover {
+            background-color: black;
+            /* color: white; */
+            color: rgb(108, 174, 177);
+            font-family: 'Baloo Bhai 2', cursive;
+            /* border-color: white; */
+            margin: 0px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 2px solid rgb(161, 211, 161);
+
+        }
+
+        .container {
+            border: 2px solid rgb(64, 196, 64);
+            width: 300px;
+            margin: auto;
+            border-radius: 4px;
+
+        }
+
+        h1 {
+            color: rgb(57, 226, 35);
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            margin: 2px 4px;
+            border-bottom: 2px solid rgb(72, 192, 72);
+            ;
+        }
+
+        .form-group input {
+            border: 2px solid rgb(194, 34, 87);
+            padding: 2px 2px;
+            border-radius: 6px;
+            font-family: 'Baloo Bhai 2', cursive;
+            display: block;
+            margin: 4px auto;
+            width: 250px;
+            text-align: center;
+            background: transparent;
+            color: white;
+        }
+
+        .container button {
+            display: block;
+            width: 100px;
+            margin: 6px auto;
+        }
+
+        .container button:hover {
+            display: block;
+            width: 100px;
+            margin: 6px auto;
+            /* background-color: rgb(51, 2, 27); */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.png" alt="">
+            <h3>Fit India</h3>
+        </div>
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="tut20.html">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Fitness Chart</a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> Sign In </button>
+            <button class="btn"> Sign Out </button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the Fit India</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
